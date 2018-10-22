@@ -1,0 +1,97 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication7;
+import java.util.Scanner;
+import java.util.Random;
+
+/**
+ *
+ * @author 1794750
+ */
+public class JavaApplication7 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner sca= new Scanner(System.in);
+        System.out.println("How many numbers");
+        int inputValue=sca.nextInt();
+        Random random= new Random();
+        
+        random.ints(1,1000);
+      
+          for(int i=0;i<inputValue;i++)
+          {
+              int val= random.nextInt(1000);
+              if(val%2==0)
+              {
+                  System.out.println("The random number "+val+" is even number");
+              }
+              else
+              {
+                  System.out.println("The random number "+val+" is odd number");
+              }
+          }
+        
+    /*   int number=1;
+       
+       while(number<1025)
+               {
+                   if(number%2==0)
+                   {
+                       System.out.println(number+" is even");
+                   }
+                   else
+                       
+                   {
+                       System.out.println(number+" is odd");
+                   }
+                   number++;
+               }   */
+        // TODO code application logic here
+        
+       /* int[] arrayList =new int[5];
+        arrayList[0]=2;
+        arrayList[1]=4;
+        arrayList[2]=8;
+        arrayList[3]=16;
+        arrayList[4]=32;
+        
+        
+        System.out.print("Which age to search? ");
+        Scanner scanner= new Scanner(System.in);
+        int valueSearch= scanner.nextInt();
+        boolean flag= false;
+        int index=0;
+        for(int i=0;i<arrayList.length;i++)
+        {
+            if(arrayList[i]==valueSearch)
+            {
+                index=i;
+                flag=true;
+    
+            }
+       
+                                
+        }
+        
+        if(flag==true)
+        {
+            System.out.println("Value is found at index "+index);
+        }
+        else
+        {
+            System.out.println("Value is not found");
+        } */
+        
+        
+        
+    }
+}
+    
+
